@@ -1,3 +1,5 @@
+/*  Basics - RESET */
+
 *  {
     box-sizing: border-box;
     margin: 0;
@@ -5,29 +7,15 @@
     scroll-behavior: smooth;
 }
 
-.navbar {
-    background: 131313;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    z-index: 999;
+/*  PALETA DE COLRES */
+
+:root {
+  --primary-color: black ;
+  --secondary-color: white;
+  --third-color: purple;
+  --fourth-color: grey;
 }
 
-.navbar__container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
-}
-
-#navbar__logo {
-    background-color: ff8177;
-}
 
 
 
