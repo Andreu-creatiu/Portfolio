@@ -7,7 +7,12 @@
     scroll-behavior: smooth;
 }
 
-/*  PALETA DE COLRES */
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*  PALETA DE COLORES */
 
 :root {
   --primary-color: black ;
@@ -16,10 +21,39 @@
   --fourth-color: grey;
 }
 
+/* HEADER */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* MAIN */
 
 
+.full_viewport section {
+  width: 100vw;
+  height: 100vh;
+}
 
+.wrap_to_center section {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+}
 
+/* PRUEBA */
+#home-page {
+  background-color: var(--third-color);
+}
+
+/* FOOTER */
 
 
 /*  || FONT FAMILY */
