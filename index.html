@@ -16,25 +16,31 @@
             <!-- Navbar Section -->
 
         <nav class="navbar">
-            <div class="navbar__cotainer">
-                <!-- Logo Mobile version-->
-                <a href="#home" id="navbar__logo">LOGO</a>
-                <div class="navbar__toggle" id="mobile-menu">
+             <!-- Logo Mobile version-->
+             <a href="#home" id="navbar__logo">AwesomeLOGO</a>
+            <!-- Menu-->
+            <div class="navbar__container">
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home-page" class="navbar__link" id="home">HOME</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#servicios-page" class="navbar__link" id="servicios">SERVICIOS</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#sobre_mi-page" class="navbar__link" id="sobre_mi">SOBRE MI</a>
+                </li>
+            </ul>
+            <div class="navbar__toggle" id="mobile-menu">
+                <label for="nav__check">
                     <span class="bar"></span>
                     <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <!-- Menu-->
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="#home-page" class="navbar__link" id="home-page">HOME</a>
-                        <a href="#servicios-page" class="navbar__link" id="servicios-page">SERVICIOS</a>
-                        <a href="#sobre_mi-page" class="navbar__link" id="sobre_mi-page">SOBRE MI</a>
-                    </li>
-                </ul>
-                <div class="navbar__item__float">
-                    <a href="#contacto-page" class="navbar__link" id="contacto-page">CONTACTO</a>
-                </div>
+                    <span class="bar"></span> 
+                </label>
+            </div>
+            </div>
+            <div class="navbar__item__float">
+                <a class="inner__float" href="#contacto-page" class="navbar__link" id="contacto">CONTACTO</a>
             </div>
         </nav>
 

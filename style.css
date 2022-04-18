@@ -8,7 +8,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -24,20 +24,104 @@ body {
 /* HEADER */
 
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
   height: 50px;
+  width: 100%;
+  background-color: #ff0000;
+
+}
+
+.navbar__container {
+
+}
+
+/* Logo */
+#navbar__logo {
+  font-size: 22px;
+  color: #fff;
+  padding: 10px
+}
+
+/* Menu */
+
+.navbar__toggle {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.navbar__toggle > label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+}
+
+.navbar__toggle > label > span {
+  display: block;
+  width: 25px;
+  height: 10px;
+  border-top: 2px solid #eee;
+}
+
+.navbar__menu {
+position: absolute;
+top: 50px;
+left:-100%;
+background-color: #999;
+width: 100%;
+
+}
+
+.navbar__item{
+  color: #e40000;
   display: flex;
-  flex-wrap: wrap;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0px;
+  
+}
+
+.navbar__item > a {
+  color: rgb(0, 0, 0);
+  background-color: aqua;
+}
+
+.navbar__item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* MENU ANIMATION */
+
+#nav__check:checked ~ .navbar__menu {
+  left:0;
+}
+
+/* FLOAT BUTTON */
+.navbar__item__float {
+  position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.inner__float {
+  margin-top:22px;
 }
 
 /* MAIN */
 
 
 .full_viewport section {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -49,9 +133,6 @@ body {
 }
 
 /* PRUEBA */
-#home-page {
-  background-color: var(--third-color);
-}
 
 /* FOOTER */
 
